@@ -1,0 +1,29 @@
+<html>
+<head>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+<script src="slider_group.js" type="text/javascript"></script>
+
+<script language="javascript">
+$(function() {
+    var slider_group = SliderGroup(".slider", 0, 100).init();
+});
+</script>
+
+</head>
+<body>
+
+<h1>SliderGroup Demo</h1>
+
+<div class="slider" style="width:250"></div><div class="slider-counter">25</div>
+<p>
+<div class="slider" style="width:250"></div><div class="slider-counter">25</div>
+<p>
+<div class="slider" style="width:250"></div><div class="slider-counter">50</div>
+
+<pre id="debug">
+</pre>
+
+</body>
+</html>
