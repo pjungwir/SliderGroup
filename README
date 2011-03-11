@@ -1,0 +1,26 @@
+SliderGroup
+by Paul Jungwirth
+
+Groups sliders from jQuery UI so they always add up to a given amount.
+
+SliderGroup assumes that each slider <div> is followed by another <div> for 
+storing/displaying the slider's current value.
+
+You should have HTML like below:
+
+    <div class="slider" style="width:250"></div>
+    <div class="slider-counter">25</div>
+    <p>
+    <div class="slider" style="width:250"></div>
+    <div class="slider-counter">25</div>
+    <p>
+    <div class="slider" style="width:250"></div>
+    <div class="slider-counter">50</div>
+
+To turn this into a slider group, include jquery and jquery-ui, then execute 
+this javascript:
+
+    $(function() {
+        SliderGroup(".slider", 0, 100).init();
+    });
+
